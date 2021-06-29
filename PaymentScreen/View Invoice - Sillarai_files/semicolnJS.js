@@ -111,4 +111,4 @@ $('#imgdiv').click(function (event)
    }     
 });
 $("#myCarousel").carousel("pause");
-setInterval(function(){ $("#myCarousel").carousel("pause");}, 10);
+setInterval(function(){ $("#myCarousel").carousel("pause");}, 3000);
