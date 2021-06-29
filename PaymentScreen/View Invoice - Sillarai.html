@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://sillarai.azurewebsites.net/Customers/ViewInvoice?id=55517505-dc09-4637-ac19-bc6857e72968 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Invoice - Sillarai</title>
+
+    <link href="./View Invoice - Sillarai_files/css" rel="stylesheet">
+<link href="./View Invoice - Sillarai_files/css(1)" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./View Invoice - Sillarai_files/bootstrap.css">
+    <link rel="stylesheet" href="./View Invoice - Sillarai_files/font-awesome.css">
+    <link rel="stylesheet" href="./View Invoice - Sillarai_files/Chart.css">
+    <link rel="stylesheet" href="./View Invoice - Sillarai_files/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="./View Invoice - Sillarai_files/site.css">
+
+<!-- arjun -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./View Invoice - Sillarai_files/semicolnStyle.css">
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+  <script src="./View Invoice - Sillarai_files/semicolnJS.js"></script>
+    
+
+    <style>
+        .variable-width .slick-slide {
+            width: 75px;
+        }
+    </style>
+
+    
+        <link rel="stylesheet" href="./View Invoice - Sillarai_files/slick.css">
+        <link rel="stylesheet" href="./View Invoice - Sillarai_files/slick-theme.css">
+    
+
+    
+
+
+<style type="text/css">
+  .gpay-card-info-container {
+    padding: 0;
+    position: relative;
+    min-width: 0px!important;
+    height: 40px;
+    min-height: 40px;
+    border-radius: 4px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 1px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+    border: 0px;
+  }
+
+  .gpay-card-info-container.black,
+  .gpay-card-info-animation-container.black {
+    background-color: #000;
+    box-shadow: none;
+  }
+
+  .gpay-card-info-container.white,
+  .gpay-card-info-animation-container.white {
+    background-color: #fff;
+  }
+
+  .gpay-card-info-container.black.active {
+    background-color: #5f6368;
+  }
+
+  .gpay-card-info-container.black.hover,
+  .gpay-card-info-animation-container.black.hover {
+    background-color: #3c4043;
+  }
+
+  .gpay-card-info-container.white.active {
+    background-color: #fff;
+  }
+
+  .gpay-card-info-container.white.focus {
+    box-shadow: #e8e8e8 0 1px 1px 0, #e8e8e8 0 1px 3px;
+  }
+
+  .gpay-card-info-container.white.hover,
+  .gpay-card-info-animation-container.white.hover {
+    background-color: #f8f8f8;
+  }
+
+  .gpay-card-info-iframe {
+    border: 0;
+    display: block;
+    height: 40px;
+    margin: auto;
+    max-width: 100%;
+    /* width: 240px; */
+  }
+
+  .gpay-card-info-container-fill .gpay-card-info-iframe{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .gpay-card-info-container-fill,
+    .gpay-card-info-container-fill > .gpay-card-info-container{
+    width: 100%;
+    height: inherit;
+  }
+
+  .gpay-card-info-container-fill .gpay-card-info-placeholder-container{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .gpay-card-info-container-fill .gpay-card-info-placeholder-svg-container{
+    position: relative;
+    width: 60%;
+    height: inherit;
+    max-height: 80%;
+    margin-right: -20%;
+  }
+
+  .gpay-card-info-container-fill .gpay-card-info-placeholder-svg-container > svg {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    max-width: 100%;
+  }
+</style><style type="text/css">
+  .gpay-card-info-animation-container {
+    display: flex;
+    width:100%;
+    position: absolute;
+    z-index: 100;
+    height: 40px;
+    border-radius: 4px;
+  }
+
+  .gpay-card-info-placeholder-container {
+    display: flex;
+    width: 0px!important;
+    height: 100%;
+    margin: auto;
+  }
+
+  .gpay-card-info-animated-progress-bar-container {
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+  }
+
+  .gpay-card-info-animated-progress-bar {
+    border-radius: 4px 4px 0px 0px;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: gpayProgressFill;
+    animation-timing-function: cubic-bezier(0.97, 0.33, 1, 1);
+    background: #caccce;
+    width: 100%;
+    height: 3px;
+    max-height: 3px;
+  }
+
+  .gpay-card-info-animated-progress-bar-indicator {
+    border-radius: 4px 4px 0px 0px;
+    max-width: 20px;
+    min-width: 20px;
+    height: 3px;
+    max-height: 3px;
+    background: linear-gradient(to right, #caccce 30%, #acaeaf 60%);
+    animation-delay: 0.5s;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: gpayPlaceHolderShimmer;
+  }
+
+  .gpay-card-info-iframe-fade-in {
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-name: gpayIframeFadeIn;
+  }
+
+  .gpay-card-info-animation-container-fade-out {
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-name: gpayPlaceHolderFadeOut;
+  }
+
+  .gpay-card-info-animation-gpay-logo {
+    margin: 13px 7px 0px  39px;
+    background-origin: content-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 17px;
+    max-height: 17px;
+    max-width: 41px;
+    min-width: 41px;
+  }
+
+  .gpay-card-info-animation-gpay-logo.black {
+    background-image: url("https://www.gstatic.com/instantbuy/svg/dark_gpay.svg");
+  }
+
+  .gpay-card-info-animation-gpay-logo.white {
+    background-image: url("https://www.gstatic.com/instantbuy/svg/light_gpay.svg");
+  }
+
+  @keyframes gpayPlaceHolderShimmer{
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: calc(100% - 20px);
+    }
+  }
+
+  @keyframes gpayIframeFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  @keyframes gpayPlaceHolderFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+  }
+
+  @keyframes gpayProgressFill {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .gpay-card-info-container-fill .gpay-card-info-animation-container{
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gpay-card-info-container-fill .gpay-card-info-animation-gpay-logo{
+    background-position: right;
+    margin: 0 0 0 0;
+    max-width: none;
+    width: 25%;
+    height:inherit;
+    max-height: 50%;
+  }
+  #imgdiv{
+    display: none;
+  }
+</style></head>
+<body style="margin-bottom:0" class="mx-auto">
+  <div style="display: none;"id="imgdiv">
+   
+    <img class="help" height="55%" id="mainhelpimg" src="./View Invoice - Sillarai_files/semicolnImages/achHelperImage.jpeg" alt="">
+  </div>
+    <div class="container-fluid m-0 p-0">
+        <main role="main" class="pb-3">
+            
+
+<div>
+    <div class="bg-primary text-white text-center m-2 p-2">
+        <div class="text-white pb-2 mb-2 fw-bold text-truncate" style="font-size:1.5rem">India Bazaar</div>
+        <div class="row small">
+            <div class="col-6"><div class="text-start">sathish@sillarai.com</div></div>
+            <div class="col-6"><div class="text-end">123-456-7890</div></div>
+        </div>
+        <span class="d-none" id="businessName">India Bazaar</span>
+        <span class="d-none" id="invoiceId">55517505-dc09-4637-ac19-bc6857e72968</span>
+    </div>
+
+    <div class="mx-3 px-3">
+        <div class="text-center py-1">
+            <img src="./View Invoice - Sillarai_files/2021_4_064d7291-577a-419c-9638-c2edb4172d69" class="img-fluid" style="max-width: 70%;max-height:70%">
+        </div>
+
+        <div class="text-center py-1">
+            <h5 class="display-5" style="font-size:1.5rem">
+                Invoice
+            </h5>
+            <div class="text-dark">
+                June 05, 2021
+            </div>
+        </div>
+
+        <div class="row pt-3" style="font-size:1rem">
+            <div class="col-6"><div class="text-start">Bill To </div></div>
+            <div class="col-6"><div class="text-end">Invoice # </div></div>
+        </div>
+        <div class="row pb-2" style="font-size:1.25rem">
+            <div class="col-6"><div class="text-start"><span class="text-primary">Rishi</span></div></div>
+            <div class="col-6"><div class="text-end"><span class="text-primary">SI/IND/2021/30</span></div></div>
+        </div>
+        <div class="p-2 border invoice-description">
+            View Payment
+        </div>
+
+        <div class="p-4 mt-2" style="background-color: #e8ebed; font-size:1.25rem">
+            <div class="row">
+                <div class="col-7"><div class="text-end">Amount due</div></div>
+                <div class="col-5">
+                    <div class="text-end fw-bold">$ 0.01</div>
+                </div>
+            </div>
+            <div class="row mt-1 pt-1" data-bind="visible:tipsEnabled" style="display: none;">
+                <div class="col-7"><div class="text-end">Tips</div></div>
+                <div class="col-5">
+                    <div class="input-group mb-3">
+                        <button class="btn btn-outline-secondary" type="button" data-bind="click:reduceTips" id="reduceTipsButton">-</button>
+                        <input type="number" class="form-control text-right no-spinner" id="tip" placeholder="$0.00" step="1" data-bind="textInput:tips" min="0">
+                        <button class="btn btn-outline-secondary" type="button" data-bind="click:increaseTips" id="increaseTipsButton">+</button>
+                    </div>
+                </div>
+            </div>
+            <hr data-bind="visible:tipsEnabled" style="display: none;">
+            <div class="row" data-bind="visible:tipsEnabled" style="display: none;">
+                <div class="col-8 col-md-9"><div class="text-end">Total</div></div>
+                <div class="col-4 col-md-3">
+                    <div class="text-end fw-bold" data-bind="text:totalDisplay">$ 0.01</div>
+                    <input type="hidden" name="total" id="total" data-bind="value:total" class="value_total" value="0.01">
+                </div>
+            </div>
+        </div>
+
+            <!-- <div class="payMarks p-4 mt-4">
+                
+                <div class="row align-items-center align-items-center  mt-4">
+                    <div class="col-1">
+                        <input class="form-check-input" type="radio" name="payMarkSelection" id="gPayPayMark" value="gPay">
+                    </div>
+                    <div class="col-3">
+                        <img src="./View Invoice - Sillarai_files/GPay.png" class="payMarkButton">
+                    </div>
+                    <div class="col-8">Google Pay</div>
+                </div>
+                <div class="row align-items-center align-items-center  mt-4">
+                    <div class="col-1">
+                        <input class="form-check-input" type="radio" name="payMarkSelection" id="creditCardPayMark" value="creditCard">
+                    </div>
+                    <div class="col-3">
+                        <img src="./View Invoice - Sillarai_files/Credit_Card.png" class="payMarkButton">
+                    </div>
+                    <div class="col-8">Credit/Debit Cards</div>
+                </div>
+                <div class="row align-items-center align-items-center  mt-4">
+                    <div class="col-1">
+                        <input class="form-check-input" type="radio" name="payMarkSelection" id="achPayMark" value="ach">
+                    </div>
+                    <div class="col-3">
+                        <img src="./View Invoice - Sillarai_files/ACH.png" class="payMarkButton">
+                    </div>
+                    <div class="col-8">ACH</div>
+                </div>
+            </div>
+            <div id="pay_buttons" class="d-flex align-items-start mt-4 border">
+                
+
+                <div class="p-4 text-center button-container w-100" id="g-pay-container">
+                  <div><button type="button" aria-label="Google Pay" class="gpay-card-info-container black long en"><div class="gpay-card-info-animation-container black gpay-card-info-animation-container-fade-out"><div class="gpay-card-info-placeholder-container"><div class="gpay-card-info-animation-gpay-logo black"></div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" direction="ltr" height="36px" width="130px"><style>@import url(//fonts.googleapis.com/css?family=Google+Sans:500)</style><line x1="2" y1="10.5" x2="2" y2="29.5" style="stroke: #5F6368; stroke-width:2"></line><image x="11" y="6" width="37.5" height="29" preserveAspectRatio="none" xlink:href="https://www.gstatic.com/images/icons/material/system/1x/payment_white_36dp.png"></image><text x="52" y="25.5" class="small" style="font: 15px &#39;Google Sans&#39;, sans-serif; fill: #FFFFFF">••••••</text></svg></div><div class="gpay-card-info-animated-progress-bar-container"><div class="gpay-card-info-animated-progress-bar"><div class="gpay-card-info-animated-progress-bar-indicator"></div></div></div></div><iframe class="gpay-card-info-iframe gpay-card-info-iframe-fade-in" scrolling="no" src="./View Invoice - Sillarai_files/generate_gpay_btn_img.html"></iframe></button></div></div>
+                <div class="p-4 w-100 text-center button-container d-none" id="credit-card-container">
+                    <div class='formdiv'>
+                        <iframe style="width: 100%;height:330px" id="creditTokenFrame" name="tokenFrame" src="./View Invoice - Sillarai_files/ajax-tokenizer.html" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                    <button type="button" class="btn btn-pay" onclick="cardConnectPay(false)" id="ccPayButton" disabled="">Pay</button>
+                </div>
+                <div class="p-4 w-100 text-center button-container d-none" id="ach-container">
+                    <div class="formdiv">
+                        <div class="d-flex justify-content-between">
+                            <label class="form-label">Routing Detail </label>
+                            <button type="button" class="btn btn-sm mb-1 ach-help" data-bs-toggle="popover" title="" data-bs-content="Provide your routing number and account number in the following format: routing number/account number. Example: 123456789/1234123412341234 " data-bs-original-title="ACH">?</button>
+                        </div>
+                        <iframe style="width: 100%;height:330px" id="creditTokenFrame" name="tokenFrame" src="./View Invoice - Sillarai_files/ajax-tokenizer(1).html" frameborder="0" scrolling="no"></iframe>
+                        <input type="hidden" name="cardConnectToken" id="cardConnectToken">
+                    </div>
+                    <button type="button" class="btn btn-pay" onclick="cardConnectPay(true)" id="achPayButton" disabled="">Pay</button>
+                </div>
+            </div>
+
+    </div> -->
+
+
+    <div class="container" style="margin-top: 20px;">
+ 
+      <div id="myCarousel" class="carousel slide" data-interval="500">
+        
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox" >
+          <div class="item active" id="creditDiv">
+            <!-- <div class='formcont'>
+            <div class="formdiv">
+              <center>
+              <h4 style="padding-top: 10px;"><img src="./View Invoice - Sillarai_files/semicolnImages/Credit Card.png" style="padding-bottom: 5px;" height="30px" width="30px" alt="credit/debit"> &nbsp;Credit/ Debit card</h4>
+              </center>
+              <label for="name">CARDHOLDER'S NAME</label><br>
+              <input type="text" class="formcontrol col-sm-12" width="100%" id="name" name="name">
+              <label>CARD NUMBER</label><br>
+              <input maxlength="4" type="text" class="formcontrol card-no num" >
+              <input maxlength="4" type="text" class="formcontrol card-no num">
+              <input maxlength="4" type="text" class="formcontrol card-no num">
+              <input maxlength="4" type="text" class="formcontrol card-no num">
+              <br><br>
+              <div class="col-sm-6" style="padding: 0;">
+              <label for="expdate">EXPIRY DATE</label>
+              <input type="text" id="expdate" class="formcontrol" style="width: 70%;">
+            </div>
+            <div class="col-sm-6"style="padding: 0;">
+              <label for="cvv">CVV</label>
+              <input type="text" maxlength="4" id="cvv" class="formcontrol num" style="width: 70%;">
+            </div>
+            <br>
+            <div class='specialcheck' style="padding-top:54px">
+            <input type="checkbox" class="form-check-input" name="save" id="save" >&nbsp; <label class="form-check-label" for="save">Save my card details</label>
+            </div> 
+            
+            </div>
+            <button class="paynow" style="color:white;  background-color:  rgb(236, 120, 140);">
+             <h4> Pay Now </h4>
+            </button>
+          </div> -->
+          <script>
+            WebFont.load({
+    google: {
+        families: [ 'Montserrat' ]
+    },
+    context: window.frames[0].frameElement.contentWindow,
+})
+          </script>
+          <div id="credit-card-container">
+            <div class='formdiv'>
+              <center>
+                <h5 style="font-weight: 700; font-size: 150%;"><img src="./View Invoice - Sillarai_files/semicolnImages/Credit Card.png" height="50px" width="60px" style="padding-bottom: 10px;" alt="credit/debit">&nbsp;Credit/debit card</h5>
+               </center>
+                <iframe style="width: 100%;height: 250px;" id="creditTokenFrame" name="tokenFrame" src="https://fts-uat.cardconnect.com/itoke/ajax-tokenizer.html?useexpiry=true&usecvv=true&css=input%20%7Bwidth%3A%20100%25%3B%20%20%20%20%20%20%20%20%20%20%2F*%20padding%3A%200%3B%20*%2F%20%20%20%20%20font-size%3A%2014px%3B%20%20%20%20%20line-height%3A%201.42857143%3B%20%20%20%20%20color%3A%20%23555%3B%20%20%20%20%20background-color%3A%20%23fff%3B%20%20%20%20%20background-image%3A%20none%3B%20%20%20%20%20border%3A%201px%20solid%20%23ccc%3B%20%20%20%20%20border-radius%3A%204px%3Bmargin-bottom:15px;margin-top%3A5px%3B%7Dselect%20%7Bwidth%3A%2040%25%3B%20%20%20%20%20%20%20%20%20%20%2F*%20padding%3A%200%3B%20*%2F%20%20%20%20%20font-size%3A%2014px%3B%20%20%20%20%20line-height%3A%201.42857143%3B%20%20%20%20%20color%3A%20%23555%3B%20%20%20%20%20background-color%3A%20%23fff%3B%20%20%20%20%20background-image%3A%20none%3B%20%20%20%20%20border%3A%201px%20solid%20%23ccc%3B%20%20%20%20%20border-radius%3A%204px%3Bmargin-bottom:15px;margin-top%3A5px%3B%7Dbody%7Bfont-family%3A'Montserrat'%2Csans-serif%3Bfont-size%3A14px%3B%7D " frameborder="0" scrolling="no"></iframe>
+            </div>
+            <button style='background-color:rgb(223, 53, 81);opacity:1;' type="button" class="btn btn-pay" onclick="cardConnectPay(false)" id="ccPayButton" disabled="">Pay</button>
+        </div>
+          </div>
+     
+          <div class="item" id="achDiv">
+            <!-- <div class='formcont'>
+              <div class="formdiv">
+                <center>
+                <h4><img src="./View Invoice - Sillarai_files/semicolnImages/ACH.png" height="50px" width="60px" style="padding-bottom: 10px;" alt="ach">ACH</h4>
+               </center>
+                <label for="name">NAME OF THE ACCOUNT HOLDER</label><br>
+                <input type="text" class="formcontrol col-sm-12" width="100%" id="name" name="name">
+                <label for="rnumber">ROUTING NUMBER</label><br>
+                <input type="text" class="formcontrol col-sm-12 num" width="100%" id="rnumber" name="rnumber">
+                <label for="anumber">ACCOUNT NUMBER</label><br>
+                <input type="text" class="formcontrol col-sm-12 num" width="100%" id="anumber" name="anumber">
+                
+                <input type="checkbox" name="save" class="form-check-input" id="save" >&nbsp; <label class="form-check-label" for="save">Save my card details</label>
+                        
+              </div>
+              <button class="paynow" style="color:white;  background-color:  rgb(55, 127, 175);">
+               <h4> Pay Now </h4>
+              </button>
+            </div> -->
+            <div id="ach-container">
+              <div class="formdiv">
+                <center>
+                  <h4 style="font-weight: 700; font-size: 150%;"><img src="./View Invoice - Sillarai_files/semicolnImages/ACH.png" height="50px" width="60px" style="padding-bottom: 10px;" alt="ach">ACH</h4>
+                 </center>
+      
+                  <label for="accountHolderName" style="margin-left:8px;"><h5 style="margin:0">Account Holder's Name</h5></label>
+                  <input type="text" id="accountHolderName" class="formcontrol" style="margin-left:8px;width: 98%;">
+                  <label for="accountHolderName" style="margin-left:8px;"><h5 style="margin:0">Account Number</h5></label>
+                  <input type="text" id="accountNumber" class="formcontrol" style="margin-left:8px; width: 98%;">
+                  
+                  <div class="d-flex justify-content-between">
+                    <label style="font-family: 'Montserrat';margin-left:8px"  class="form-label splabel"> <h5> Routing Detail </h5></label>
+                    <button type="button" class="btn btn-sm mb-1 ach-help" data-bs-toggle="popover" title="" data-bs-content="Provide your routing number and account number in the following format: routing number/account number. Example: 123456789/1234123412341234 " data-bs-original-title="ACH">?</button>
+                </div>
+                  
+                  <iframe style="width: 100%;height: 40px;" id="creditTokenFrame" name="tokenFrame" src="https://fts-uat.cardconnect.com/itoke/ajax-tokenizer.html?fullmobilekeyboard=true&tokenizewheninactive=true&inactivityto=2000&css=input%20%7Bwidth%3A%20100%25%3B%20%20%20%20%20%20%20%20%20%20%2F*%20padding%3A%200%3B%20*%2F%20%20%20%20%20font-size%3A%2014px%3B%20%20%20%20%20line-height%3A%201.42857143%3B%20%20%20%20%20color%3A%20%23555%3B%20%20%20%20%20background-color%3A%20%23fff%3B%20%20%20%20%20background-image%3A%20none%3B%20%20%20%20%20border%3A%201px%20solid%20%23ccc%3B%20%20%20%20%20border-radius%3A%204px%3Bmargin-bottom:15px;margin-top%3A5px%3B%7Dselect%20%7Bwidth%3A%2040%25%3B%20%20%20%20%20%20%20%20%20%20%2F*%20padding%3A%200%3B%20*%2F%20%20%20%20%20font-size%3A%2014px%3B%20%20%20%20%20line-height%3A%201.42857143%3B%20%20%20%20%20color%3A%20%23555%3B%20%20%20%20%20background-color%3A%20%23fff%3B%20%20%20%20%20background-image%3A%20none%3B%20%20%20%20%20border%3A%201px%20solid%20%23ccc%3B%20%20%20%20%20border-radius%3A%204px%3Bmargin-bottom:15px;margin-top%3A5px%3B%7Dbody%7Bfont-family%3A'Montserrat'%2Csans-serif%3Bfont-size%3A14px%3B%7D" frameborder="0" scrolling="no"></iframe>
+                  <center>
+                    <button style="border: none; background-color: white;" onclick="showImage()">
+                    <img id="helperimage" src="./View Invoice - Sillarai_files/semicolnImages/achHelperImage.jpeg" style="cursor: pointer;transition: 0.5s;" height="60px"  alt="">
+                    </button>
+                  </center>
+                  <input type="hidden" name="cardConnectToken" id="cardConnectToken">
+                  
+              </div>
+              <button style='background-color:rgb(6, 70, 165);opacity:1;' type="button" class="btn btn-pay" onclick="cardConnectPay(true)" id="achPayButton" disabled="">Pay</button>
+          </div>
+          </div>
+        
+          <div class="item" id="appleDiv">
+            <div class='formcont'>
+              <div class="formdiv">
+                <center style="margin-top:85px">
+                  <!-- <h1>Apple Pay</h1> -->
+                  <img src="./View Invoice - Sillarai_files/semicolnImages/applepaylogo.svg" width="65%" height="65%" alt="Applepay">
+                  <apple-pay-button buttonstyle="black" type="plain" locale="en"></apple-pay-button>
+                  <!-- <button class='continue' style="background-color: rgb(0, 0, 0); color:white"> <b> Pay with Apple Pay </b> </button> -->
+                </center>
+                
+            </div>
+            <div class="btn-pay" style="color:white;  opacity: 0;">
+          dsd
+              </div>
+          </div>
+        </div>
+          <div class="item" id="googleDiv">
+            <div class='formcont'>
+              <div class="formdiv">
+                <center style="margin-top:85px">
+                  <!-- <h1>Google Pay</h1> -->
+                  <img src="./View Invoice - Sillarai_files/semicolnImages/gpaylogo.svg" width="70%" height="70%" alt="Gpay">
+                  <!-- <button class='continue' style="background-color: rgb(119, 28, 172); color:white"><b> Continue </b></button> -->
+                  <div id="g-pay-container">
+                    <!-- <button type="button" aria-label="Google Pay" class="gpay-card-info-container black long en"><div class="gpay-card-info-animation-container black gpay-card-info-animation-container-fade-out"><div class="gpay-card-info-placeholder-container"><div class="gpay-card-info-animation-gpay-logo black"></div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" direction="ltr" height="36px" width="130px"><style>@import url(//fonts.googleapis.com/css?family=Google+Sans:500)</style><line x1="2" y1="10.5" x2="2" y2="29.5" style="stroke: #5F6368; stroke-width:2"></line><image x="11" y="6" width="37.5" height="29" preserveAspectRatio="none" xlink:href="https://www.gstatic.com/images/icons/material/system/1x/payment_white_36dp.png"></image><text x="52" y="25.5" class="small" style="font: 15px &#39;Google Sans&#39;, sans-serif; fill: #FFFFFF">••••••</text></svg></div><div class="gpay-card-info-animated-progress-bar-container"><div class="gpay-card-info-animated-progress-bar"><div class="gpay-card-info-animated-progress-bar-indicator"></div></div></div></div><iframe class="gpay-card-info-iframe gpay-card-info-iframe-fade-in" scrolling="no" src="./View Invoice - Sillarai_files/generate_gpay_btn_img.html"></iframe></button></div> -->
+                  </div>
+                  <br>
+                  <a id="opengpay" href="https://gpay.app.goo.gl/kHXsJi"> Open Gpay</a>
+                </center>
+                
+            </div>
+            <div class="btn-pay" style="color:white;  opacity: 0;">
+              asdas
+              </div>
+          </div>
+          </div>
+        <!-- </div> -->
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" data-target="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <!-- <span class="sr-only">Previous</span> -->
+        </a>
+        <a class="right carousel-control" data-target="#myCarousel"role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <!-- <span class="sr-only">Next</span> -->
+        </a>
+
+
+<br><br><br>
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel"  class='osSpecific' data-slide-to="3"></li>
+        </ol>
+      </div>
+    
+     <br><br>
+      
+    
+    
+    
+    
+    </div>
+    
+      <script>
+          //semicolnTech
+          $(document).on('keypress','.num',function (event) {
+    var keycode = event.which;
+    if (!(event.shiftKey == false && (keycode == 46 || keycode == 8 || keycode == 37 || keycode == 39 || (keycode >= 48 && keycode <= 57)))) {
+        event.preventDefault();
+    }
+    else if(document.getElementsByClassName('card-no').length>=4){
+      $(this).next('.card-no').focus();
+    }
+    // if(document.getElementById('cvv').length>=4){
+    //   event.preventDefault();
+    // }
+    
+});
+          //semicolnTech
+
+      </script>
+
+    <div id="qrcode" class="mx-auto mt-3 pt-3 d-print-block d-none" style="width:128px;height:128px">
+
+    <canvas width="106" height="106" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: inline;"></div>
+    <div class="text-center m-2 p-2">
+        <div class="text-primary" style="font-size:0.75rem">
+            Powered by <a href="https://www.sillarai.com/" target="_blank">Sillarai</a>
+        </div>
+    </div>
+
+
+</div>
+
+
+        </main>
+    </div>
+
+
+    
+
+    <script src="./View Invoice - Sillarai_files/jquery.js.download"></script>
+    <script src="./View Invoice - Sillarai_files/bootstrap.bundle.js.download"></script>
+    <script src="./View Invoice - Sillarai_files/knockout-latest.js.download"></script>
+    <script src="./View Invoice - Sillarai_files/knockout.mapping.js.download"></script>
+    <script src="./View Invoice - Sillarai_files/Chart.js.download"></script>
+    <script src="./View Invoice - Sillarai_files/jquery.dataTables.min.js.download"></script>
+    <script src="./View Invoice - Sillarai_files/dataTables.bootstrap5.min.js.download"></script>
+    <script src="./View Invoice - Sillarai_files/invoice.js.download"></script>
+    <script src="./View Invoice - Sillarai_files/site.js.download"></script>
+
+
+
+
+<script src="./View Invoice - Sillarai_files/jquery.dataTables.min.js.download"></script>
+<script src="./View Invoice - Sillarai_files/dataTables.bootstrap5.min.js.download"></script>
+
+    
+
+    <script src="./View Invoice - Sillarai_files/easy.qrcode.min.js.download"></script>
+
+    
+        <script src="./View Invoice - Sillarai_files/axios.js.download"></script>
+        <script src="./View Invoice - Sillarai_files/gpay.js.download"></script>
+        <script src="./View Invoice - Sillarai_files/applePay.js.download"></script>
+        <script src="./View Invoice - Sillarai_files/slick.js.download"></script> 
+    
+
+    
+
+  <script async="" src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script>
+
+
+    <script>
+
+
+        function cardConnectPay(isAch) {
+            $.ajax({
+                url: '/api/payments/cardConnectInvoice',
+                type: "POST",
+                data: JSON.stringify(
+                    {
+                        InvoiceId: '55517505-dc09-4637-ac19-bc6857e72968',
+                        Tips: viewModel.tips(),
+                        Token: document.getElementById('cardConnectToken').value,
+                        IsAch: isAch
+
+                    },
+                ),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function () {
+                    location.reload();
+                }
+            });
+        }
+
+        window.addEventListener('message', function (event) {
+
+            if (event.origin.indexOf('cardconnect.com') <= 0)
+                return;
+
+            var token = JSON.parse(event.data);
+            var cardConnectToken = document.getElementById('cardConnectToken');
+            cardConnectToken.value = token.message;
+            $('#ccPayButton,#achPayButton').removeAttr('disabled');
+            $('#ccPayButton').html('Click to Pay');
+            $('#achPayButton').html('Click to Pay with ACH');
+        }, false);
+
+        var updatePayContainers = function () {
+
+            var selectedValue = $('.payMarks input[type="radio"]:checked').val();
+            $('#pay_buttons > div').addClass('d-none');
+
+            if (selectedValue === 'applePay') {
+            } else if (selectedValue === 'applePay') {
+                $('#apple-pay-container').removeClass('d-none');
+            } else if (selectedValue === 'gPay') {
+                $('#g-pay-container').removeClass('d-none');
+            } else if (selectedValue === 'creditCard') {
+                $('#credit-card-container').removeClass('d-none');
+            } else if (selectedValue === 'ach') {
+                $('#ach-container').removeClass('d-none');
+            }
+
+        };
+
+        $(document).ready(function () {
+
+            if (!window.ApplePaySession) {
+                $('.applePayUiElement').remove();
+            }
+
+            new bootstrap.Popover(document.querySelector('.ach-help'), {
+                trigger: 'focus'
+            })
+
+            $('.payMarks input[type="radio"]').on('change', updatePayContainers);
+
+            $('.payMarks input[type="radio"]:first').prop('checked', true);
+            updatePayContainers();
+
+
+            //if (!window.ApplePaySession) {
+            //    $('#apple-pay-mark, #apple-pay-container').remove();
+            //}
+            //$('#payMarks').slick({
+            //    dots: true,
+            //    speed: 300,
+            //    slidesToShow: 1,
+            //    infinite: false,
+            //    centerMode: true,
+            //    variableWidth: true,
+            //});
+
+            //$('#pay_buttons').slick({
+            //    dots: true,
+            //    arrows:true,
+            //    speed: 300,
+            //    slidesToShow: 1,
+            //    infinite: true,
+            //    centerMode: true,
+            //    variableWidth: true,
+            //    fade: false,
+            //});
+
+        //    $('#pay_buttons > div:nth-Child(1)').removeClass('d-none');
+
+        //    $('#payMarks').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+
+        //       $('#pay_buttons > .button-container').addClass('d-none');
+        //       $('#pay_buttons > div:nth-Child(' + (nextSlide+1)+')').removeClass('d-none');
+        //    });
+
+        //    $('#payMarks .payMarkButton').on('click', function (event) {
+        //        var slideNumber = $('#payMarks .payMarkButton').index(event.currentTarget)
+        //        $('#payMarks').slick('slickGoTo', slideNumber);
+        //    });
+
+        });
+        var paymentFor = 'Invoice';
+        var viewModel = new ViewInvoiceModel(0.01, false);
+        viewModel.tips(0);
+        ko.applyBindings(viewModel);
+
+
+        new QRCode(document.getElementById("qrcode"), options = {
+            width: 128,
+            height: 128,
+            text: window.location.href,
+            dotScale: 0.4,
+            autoColor: true,
+            backgroundImage: '/images/pay_with_sillarai.png',
+            backgroundImageAlpha: 1
+        });
+
+        $('.payeezyForm').submit(function (event) {
+            event.preventDefault();
+
+            $.getJSON('/api/invoices/invoiceHash?invoiceid=55517505-dc09-4637-ac19-bc6857e72968&tips='+viewModel.tips(), function (data) {
+
+                $('#x_fp_hash').val(data.hash);
+                $('#x_fp_timestamp').val(data.timeStamp);
+                $('#x_amount').val(viewModel.total());
+
+                $('.payeezyForm').off('submit');
+                $('.payeezyForm').submit();
+
+            });
+        });
+
+        $('#convergePay').click(function () {
+
+            $.get('/api/payments/convergeInvoiceToken?invoiceid=55517505-dc09-4637-ac19-bc6857e72968&amount=' + viewModel.total(), function (data) {
+
+                $('#convergeToken').val(data);
+
+                openLightbox(data);
+
+            });
+        });
+
+        function openLightbox(token) {
+            var paymentFields = {
+                ssl_txn_auth_token: token
+            };
+            var callback = {
+                onError: function (error) {
+                    showResult("error", error);
+                },
+                onCancelled: function () {
+                    showResult("cancelled", "");
+                },
+                onDeclined: function (response) {
+                    showResult("declined", "Transaction Declined");
+                },
+                onApproval: function (response) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/api/payments/convergePayInvoice?invoiceId=55517505-dc09-4637-ac19-bc6857e72968',
+                        data: JSON.stringify (response),
+                        success: location.reload(),
+                        contentType: "application/json",
+                        dataType: 'json'
+                    });
+                }
+            };
+            PayWithConverge.open(paymentFields, callback);
+            return false;
+        }
+
+        function showResult(status, msg) {
+            alert(status + msg);
+        }
+
+
+
+     </script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./View Invoice - Sillarai_files/semicolnStyle.css">
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+  <script src="https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js"></script>
+  <script src="./View Invoice - Sillarai_files/semicolnJS.js"></script>
+
+ <!-- <iframe src="./View Invoice - Sillarai_files/payframe.html" height="0" width="0" allowpaymentrequest="true" style="display: none; visibility: hidden;"></iframe> -->
+</body></html>

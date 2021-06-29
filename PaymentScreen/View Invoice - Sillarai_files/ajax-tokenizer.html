@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0161)https://fts-uat.cardconnect.com/itoke/ajax-tokenizer.html?useexpiry=true&usecvv=true&css=input%7bmargin-bottom%3a5px%3b%7d%3b%23cccvvlabel%7bmargin-top%3a10px%7d -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="semicolnStyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<meta name="title" content="">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="referrer" content="no-referrer">
+		<script type="application/javascript" src="./itoke.js.download"></script>
+	<style type="text/css">
+	@media (min-width: 100px){
+		.col-sm-2{
+			float: left;
+			padding-right: 0;
+			
+		}
+	}
+	body{font-family: 'Montserrat';}  input{margin-bottom:5px;padding: 0!important;}</style></head>
+	<body onload="javascript:nameField(&#39;cccvvfield&#39;);nameField(&#39;ccnumfield&#39;);nameField(&#39;ccexpiryfieldmonth&#39;);nameField(&#39;ccexpiryfieldyear&#39;);onLoad();">
+		<form name="tokenform" id="tokenform" autocomplete="off">
+			<label id="cccardlabel">Card Number</label><br><input id="ccnumfield" class="formcontrol" type="tel" name="ccnumfield" size="19" maxlength="2000" autocomplete="off" title="Credit Card Number">
+			<input id="ccexpiryfieldmonth" type="hidden" name="ccexpiryfieldmonth780655" size="2" maxlength="20" autocomplete="off" oninput="clearInputs()" value="">
+			<input id="ccexpiryfieldyear" type="hidden" name="ccexpiryfieldyear2628938" size="4" maxlength="20" autocomplete="off" oninput="clearInputs()" value="">
+			<br>
+			<div class="row">
+			<div class="col-sm-2"><label id="ccexpirylabel">Expiration Date</label><br><select class="formcontrol" style="width:90%; margin: 0;" title="Expiration Month" id="ccexpirymonth"><option value="--">--</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></input></div><div class="col-sm-2"><label style="opacity: 0;" id="ccexpirylabel">Expiration Date</label><select class="formcontrol" style="width:90%;" title="Expiration Year" id="ccexpiryyear" style="margin-left: 0;"><option value="--">--</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option><option value="2032">2032</option><option value="2033">2033</option><option value="2034">2034</option><option value="2035">2035</option><option value="2036">2036</option><option value="2037">2037</option><option value="2038">2038</option><option value="2039">2039</option><option value="2040">2040</option></select></div></div>
+		 <br><label id="cccvvlabel">CVV</label><br><input id="cccvvfield" class="formcontrol" type="text" name="cccvvfield2157502" size="5" maxlength="4" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, &#39;&#39;);clearInputs();" value="" title="Card Verification Value">
+			<input type="text" style="display: none;">
+		</form>
+	
+
+</body></html>

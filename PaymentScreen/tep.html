@@ -1,0 +1,165 @@
+<div class="container" style="margin-top: 20px;">
+ 
+  <div id="myCarousel" class="carousel slide" data-interval="500">
+   
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" id="creditDiv">
+        <!-- <div class='formcont'>
+        <div class="formdiv">
+          <center>
+          <h4 style="padding-top: 10px;"><img src="./View Invoice - Sillarai_files/semicolnImages/Credit Card.png" style="padding-bottom: 5px;" height="30px" width="30px" alt="credit/debit"> &nbsp;Credit/ Debit card</h4>
+          </center>
+          <label for="name">CARDHOLDER'S NAME</label><br>
+          <input type="text" class="formcontrol col-sm-12" width="100%" id="name" name="name">
+          <label>CARD NUMBER</label><br>
+          <input maxlength="4" type="text" class="formcontrol card-no num" >
+          <input maxlength="4" type="text" class="formcontrol card-no num">
+          <input maxlength="4" type="text" class="formcontrol card-no num">
+          <input maxlength="4" type="text" class="formcontrol card-no num">
+          <br><br>
+          <div class="col-sm-6" style="padding: 0;">
+          <label for="expdate">EXPIRY DATE</label>
+          <input type="text" id="expdate" class="formcontrol" style="width: 70%;">
+        </div>
+        <div class="col-sm-6"style="padding: 0;">
+          <label for="cvv">CVV</label>
+          <input type="text" maxlength="4" id="cvv" class="formcontrol num" style="width: 70%;">
+        </div>
+        <br>
+        <div class='specialcheck' style="padding-top:54px">
+        <input type="checkbox" class="form-check-input" name="save" id="save" >&nbsp; <label class="form-check-label" for="save">Save my card details</label>
+        </div> 
+        
+        </div>
+        <button class="paynow" style="color:white;  background-color:  rgb(236, 120, 140);">
+         <h4> Pay Now </h4>
+        </button>
+      </div> -->
+      <div class="p-4 w-100 text-center button-container d-none" id="credit-card-container">
+        <div class='formdiv'>
+            <iframe style="width: 100%;height:330px" id="creditTokenFrame" name="tokenFrame" src="./View Invoice - Sillarai_files/ajax-tokenizer.html" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <button type="button" class="btn btn-pay" onclick="cardConnectPay(false)" id="ccPayButton" disabled="">Pay</button>
+    </div>
+      </div>
+ 
+      <div class="item" id="achDiv">
+        <!-- <div class='formcont'>
+          <div class="formdiv">
+            <center>
+            <h4><img src="./View Invoice - Sillarai_files/semicolnImages/ACH.png" height="50px" width="60px" style="padding-bottom: 10px;" alt="ach">ACH</h4>
+           </center>
+            <label for="name">NAME OF THE ACCOUNT HOLDER</label><br>
+            <input type="text" class="formcontrol col-sm-12" width="100%" id="name" name="name">
+            <label for="rnumber">ROUTING NUMBER</label><br>
+            <input type="text" class="formcontrol col-sm-12 num" width="100%" id="rnumber" name="rnumber">
+            <label for="anumber">ACCOUNT NUMBER</label><br>
+            <input type="text" class="formcontrol col-sm-12 num" width="100%" id="anumber" name="anumber">
+            
+            <input type="checkbox" name="save" class="form-check-input" id="save" >&nbsp; <label class="form-check-label" for="save">Save my card details</label>
+                    
+          </div>
+          <button class="paynow" style="color:white;  background-color:  rgb(55, 127, 175);">
+           <h4> Pay Now </h4>
+          </button>
+        </div> -->
+        <div class="p-4 w-100 text-center button-container d-none" id="ach-container">
+          <div class="formdiv">
+              <div class="d-flex justify-content-between">
+                  <label class="form-label">Routing Detail </label>
+                  <button type="button" class="btn btn-sm mb-1 ach-help" data-bs-toggle="popover" title="" data-bs-content="Provide your routing number and account number in the following format: routing number/account number. Example: 123456789/1234123412341234 " data-bs-original-title="ACH">?</button>
+              </div>
+              <iframe style="width: 100%;height:330px" id="creditTokenFrame" name="tokenFrame" src="./View Invoice - Sillarai_files/ajax-tokenizer(1).html" frameborder="0" scrolling="no"></iframe>
+              <input type="hidden" name="cardConnectToken" id="cardConnectToken">
+          </div>
+          <button type="button" class="btn btn-pay" onclick="cardConnectPay(true)" id="achPayButton" disabled="">Pay</button>
+      </div>
+      </div>
+    
+      <div class="item" id="appleDiv">
+        <div class='formcont'>
+          <div class="formdiv">
+            <center style="margin-top:85px">
+              <!-- <h1>Apple Pay</h1> -->
+              <img src="./View Invoice - Sillarai_files/semicolnImages/applepaylogo.svg" width="90%" height="90%" alt="Applepay">
+              <button class='continue' style="background-color: rgb(0, 0, 0); color:white"> <b> Continue </b> </button>
+            </center>
+            
+        </div>
+        <div class="paynow" style="color:white;  opacity: 0;">
+          <h4> Pay Now </h4>
+          </div>
+      </div>
+    </div>
+      <div class="item" id="googleDiv">
+        <div class='formcont'>
+          <div class="formdiv">
+            <center style="margin-top:85px">
+              <!-- <h1>Google Pay</h1> -->
+              <img src="./View Invoice - Sillarai_files/semicolnImages/gpaylogo.svg" width="90%" height="90%" alt="Gpay">
+              <!-- <button class='continue' style="background-color: rgb(119, 28, 172); color:white"><b> Continue </b></button> -->
+              <div><button type="button" aria-label="Google Pay" class="gpay-card-info-container black long en"><div class="gpay-card-info-animation-container black gpay-card-info-animation-container-fade-out"><div class="gpay-card-info-placeholder-container"><div class="gpay-card-info-animation-gpay-logo black"></div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" direction="ltr" height="36px" width="130px"><style>@import url(//fonts.googleapis.com/css?family=Google+Sans:500)</style><line x1="2" y1="10.5" x2="2" y2="29.5" style="stroke: #5F6368; stroke-width:2"></line><image x="11" y="6" width="37.5" height="29" preserveAspectRatio="none" xlink:href="https://www.gstatic.com/images/icons/material/system/1x/payment_white_36dp.png"></image><text x="52" y="25.5" class="small" style="font: 15px &#39;Google Sans&#39;, sans-serif; fill: #FFFFFF">••••••</text></svg></div><div class="gpay-card-info-animated-progress-bar-container"><div class="gpay-card-info-animated-progress-bar"><div class="gpay-card-info-animated-progress-bar-indicator"></div></div></div></div><iframe class="gpay-card-info-iframe gpay-card-info-iframe-fade-in" scrolling="no" src="./View Invoice - Sillarai_files/generate_gpay_btn_img.html"></iframe></button></div></div>
+
+            </center>
+            
+        </div>
+        <div class="paynow" style="color:white;  opacity: 0;">
+          <h4> Pay Now </h4>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" data-target="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <!-- <span class="sr-only">Previous</span> -->
+    </a>
+    <a class="right carousel-control" data-target="#myCarousel"role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <!-- <span class="sr-only">Next</span> -->
+    </a>
+  </div>
+
+  <!-- <div id="payGrid">
+
+   <div class="payRadioContainer col-sm-7">
+    <div class="row">
+      <div onclick="showPaymentForms('gpay')" class="payRadio col-sm-5">
+     <h2>Gpay</h2>
+     <input type="radio" id="gpayRadio" name="pay" style="height: 30px; width: 30px; float: left;">
+     <img src="./View Invoice - Sillarai_files/semicolnImages/gpaylogo.svg" height="80%" width="80%" alt="Gpay" style="float: left;margin-top: 10px;">
+      </div>
+      <div onclick="showPaymentForms('apple')" class="payRadio col-sm-5">
+      <h2>Apple pay</h2>
+      <input type="radio" name="pay" id="appleRadio" style="height: 30px; width: 30px; float: left;">
+      <img src="./View Invoice - Sillarai_files/semicolnImages/applepaylogo.svg" height="80%" width="80%" alt="Applepay" style="float: left;margin-top: 10px;">
+      </div>
+    </div>
+    <div class="row">
+      <div onclick="showPaymentForms('credit')" class="payRadio col-sm-5">
+        <input type="radio" name="pay" id="creditRadio" style="height: 30px; width: 30px;  float: left;">
+        <img src="./View Invoice - Sillarai_files/semicolnImages/Credit Card.png" height="45px" width="55px" style="float: left;margin-top: 27px;margin-right: 10px;" alt="credit/debit card">
+        <h4 style="float: left;margin-top: 31px;"> Credit/Debit <br> cards</h4>
+      </div>
+      <div onclick="showPaymentForms('ach')" class="payRadio col-sm-5">
+        <input type="radio" name="pay" id="achRadio" style="height: 30px; width: 30px; float: left;">
+         <img src="./View Invoice - Sillarai_files/semicolnImages/ACH.png" height="65px" width="75px" style="float: left;margin-top: 15px;" alt="ach">
+         <h2 style="float: left;margin-top: 38px;"> ACH</h2>
+      </div>
+    </div>
+    
+   </div>
+<div id="payForm" class="payForm col-sm-5">
+hiiiiiiiiii
+</div>
+
+  </div> -->
+
+
+
+
+
+</div>
